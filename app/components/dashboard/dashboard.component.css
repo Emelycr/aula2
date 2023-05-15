@@ -1,20 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
   font-size: 14px;
 }
 
-h4{
+h4 {
   font-size: 12px;
   color: #bab4e5;
   margin-top: 5px;
 }
 
-h5{
+h5 {
   font-size: 10px;
   margin-top: 10px;
 }
@@ -115,7 +115,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 450px;
   grid-template-rows: 500px;
-  margin:20px 30px;
+  margin: 20px 30px;
   gap: 20px;
 }
 
@@ -150,7 +150,7 @@ section .box2 {
   margin-left: 15px;
 }
 
-section .box1 .member{
+section .box1 .member {
   background: #f8fafd;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -175,7 +175,7 @@ section .box1 .member .card-member img {
   grid-column: 3/4;
 }
 
-.content .activity{
+.content .activity {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px 80px;
@@ -183,17 +183,97 @@ section .box1 .member .card-member img {
   margin-top: 20px;
 }
 
-.content .activity div{
+.content .activity div {
   background: #f8fafd;
 }
 
-.activity .card-member img{
+.activity .card-member img {
   width: 40px;
 }
 
-.activity .card-member{
+.activity .card-member {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 15px;
   padding: 10px;
 }
+
+.container .user-infor {
+  display: grid;
+  grid-template-rows: 75px 1fr 100px 200px 1fr;
+}
+.container .user-infor .box-1 {
+  background: #f7f8fa;
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
+.container .user-infor .box-1 i {
+  font-size: 20px;
+  color: #696969;
+}
+
+.container .user-infor .box-2 {
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 12px;
+  color: #bab4e5;
+  margin-top: 5px;
+}
+.container .user-infor .box-2 img {
+  width: 200px;
+ margin-bottom: 20px;
+}
+
+.container .user-infor .box-3 {
+  margin: 0 auto;
+}
+
+.container .user-infor .box-4 {
+  background: #ffffff;
+}
+
+.container .user-infor .box-5 {
+  background: #f03e3e;
+}
+
+.container .user-infor .box-3 .icone{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #dad6ee;
+  border-radius: 8px;
+  width: 280px;
+  height: 80px;
+  padding: 20px;
+}
+
+.container .user-infor .box-3 .icone .dentro .trofeu .item-1, .container .user-infor .box-3 .icone .dentro .user .item-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .user-infor .box-3 .icone .dentro {
+width: 40px;
+height: 40px;
+background: #fff;
+border-radius: 50%;
+display: grid;
+place-items: center;
+
+}
+
+
+  
+
