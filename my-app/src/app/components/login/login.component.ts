@@ -6,24 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  isAprovado = false;
+
   isError = false;
+  isSuccess = false;
 
   user = ""
   pwd = ""
 
   login(){
-    
-    // console.log("User = " + this.user + "Password = " + this.pwd)
-    if(this.user == "emely123" && this.pwd == "1234") {
-      this.isError = false;
-      this.isAprovado = true;
-      console.log ("Login Aprovado")
-     } else { 
+    if(this.user == "beto@beto" && this.pwd == "beto"){
+      this.isSuccess = true
+      this.isError = false
+      console.log("Login aprovado")
+      // redirecionar p alguma página
+    } else {
       this.isError = true;
-      this.isAprovado = false
+      this.isSuccess = false;
     }
-    
+    // console.log("User = " + this.user + " Password = " + this.pwd)
   }
+
+
+  // user = beto@beto.com.br e password = beto {
+  //   // login
+  // } else {
+  //   isError = true;
+  // }
 
 }

@@ -1,0 +1,77 @@
+.container {
+  background: rgb(227, 227, 227);
+  height: 100vh;
+  display: flex;
+  align-content: flex-start;
+  margin: 0  auto;
+  border: 1px solid black;
+  width: 80%;
+  flex-wrap: wrap;
+
+}
+
+.container .header {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(45deg, rgb(130, 130, 185), #fff);
+}
+
+.container .header label {
+  font-size: 22px;
+}
+
+.container .header input {
+  font-size: 22px;
+  background: rgb(247, 238, 255);
+  outline: none;
+  height: 45px;
+}
+
+.container .header button {
+  font-size: 22px;
+  background: #4f61ff;
+  color:aliceblue;
+  width: 150px;
+  height: 40px;
+
+}
+
+.container .heroes {
+  /* border: 2px solid red; */
+  padding: 30px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.container .heroes ul li {
+  list-style: none;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  transition: background 500ms;
+}
+
+.container .heroes ul li:hover {
+  background: #dfd;
+
+}
+
+.container .card-hero {
+  background: rgb(255, 222, 222);
+  width: 400px;
+  height: 250px;
+  margin-left: 35px;
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid #515151;
+}
+
+.container .card-hero .photo {
+  width: 80px;
+  height: 80px;
+}
