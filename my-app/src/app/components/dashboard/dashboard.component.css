@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
-h2{
+h2 {
   font-size: 16px;
 }
 
@@ -165,6 +165,11 @@ section .box2 {
   height: 35px;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.title button:hover {
+  filter: brightness(140%);
 }
 
 .title span {
@@ -246,7 +251,8 @@ section .box2 {
   border-radius: 8px;
 }
 
-.container .user-info .box-3 .box .item-1, .container .user-info .box-3 .box .item-2 {
+.container .user-info .box-3 .box .item-1,
+.container .user-info .box-3 .box .item-2 {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -265,7 +271,8 @@ section .box2 {
   color: #b0abe2;
 }
 
-.container .user-info .box-3 .item-2 i, .container .user-info .box-3 .item-2 h4 {
+.container .user-info .box-3 .item-2 i,
+.container .user-info .box-3 .item-2 h4 {
   color: #f47c51;
 }
 
@@ -279,7 +286,7 @@ section .box2 {
   padding: 15px;
 }
 
-.container .user-info .box-4  .task-1 {
+.container .user-info .box-4 .task-1 {
   display: flex;
   align-items: center;
   margin: 0 15px;
@@ -288,7 +295,7 @@ section .box2 {
   border-radius: 8px;
 }
 
-.container .user-info .box-4  .task-1 > div:nth-child(1) {
+.container .user-info .box-4 .task-1 > div:nth-child(1) {
   background: #ffffff47;
   color: #fff;
   width: 40px;
@@ -299,12 +306,11 @@ section .box2 {
   border-radius: 8px;
 }
 
-.container .user-info .box-4  .task-1 > div:nth-child(2) {
+.container .user-info .box-4 .task-1 > div:nth-child(2) {
   color: #fff;
 }
 
-
-.container .user-info .box-4  .task-2 {
+.container .user-info .box-4 .task-2 {
   display: flex;
   align-items: center;
   margin: 10px 15px;
@@ -313,7 +319,7 @@ section .box2 {
   border-radius: 8px;
 }
 
-.container .user-info .box-4  .task-2 > div:nth-child(1) {
+.container .user-info .box-4 .task-2 > div:nth-child(1) {
   background: #ffffff47;
   color: #fff;
   width: 40px;
@@ -324,27 +330,25 @@ section .box2 {
   border-radius: 8px;
 }
 
-.container .user-info .box-4  .task-2 > div:nth-child(2) {
+.container .user-info .box-4 .task-2 > div:nth-child(2) {
   color: #fff;
 }
 
-.container .user-info .box-5 .recent-task{
+.container .user-info .box-5 .recent-task {
   display: flex;
   justify-content: space-between;
   margin: 20px 15px;
 }
 
-.container .user-info .box-5 .recent-task .status{
+.container .user-info .box-5 .recent-task .status {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.container .user-info .box-5 .recent-task .ball{
+.container .user-info .box-5 .recent-task .ball {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #40c17d;
 }
-
-

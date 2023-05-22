@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+  constructor (private router: Router){
+
+  }
 
   isError = false;
   isSuccess = false;
@@ -18,12 +23,15 @@ export class LoginComponent {
       this.isSuccess = true
       this.isError = false
       console.log("Login aprovado")
+
+     this.router.navigateByUrl('/dashboard')
       // redirecionar p alguma página
     } else {
       this.isError = true;
       this.isSuccess = false;
     }
-    // console.log("User = " + this.user + " Password = " + this.pwd)
+
+   console.log("User = " + this.user + " Password = " + this.pwd)
   }
 
 
