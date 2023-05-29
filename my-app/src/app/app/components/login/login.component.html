@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="login">
+    <h2>Sign In</h2>
+
+    <div class="error" *ngIf="isError">
+      <i class="bx bxs-message-error"></i>
+      <span>Login or password is Incorrect!</span>
+    </div>
+
+    <div class="success" *ngIf="isSuccess">
+      <i class="bx bxs-check-circle"></i>
+      <span>Login Success!</span>
+    </div>
+
+    <div class="input">
+      <i class="bx bx-envelope"></i>
+      <input
+        type="text"
+        name="login"
+        id="login"
+        placeholder="E-mail"
+        [(ngModel)]="user"
+      />
+    </div>
+    <div class="input">
+      <i class="bx bxs-lock-alt"></i>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        [(ngModel)]="pwd"
+      />
+      <i class="bx bx-low-vision"></i>
+    </div>
+
+    <div class="remember">
+      <div>
+        <input type="checkbox" name="remember" id="remember" />
+        <h3>Remember me</h3>
+      </div>
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="button" (click)="login()">SIGN IN</button>
+
+    <h3>Don't have an account? <a routerLink="/create">Create</a></h3>
+  </div>
+</div>

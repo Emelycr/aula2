@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="create">
+      <h2>Create User</h2>
+
+      <div class="incorrect" *ngIf="isIncorrect">
+          <i class='bx bxs-error-circle' ></i>
+          <span>Password is Incorrect!</span>
+       </div>
+
+       <div class="correct" *ngIf="isCorrect">
+          <i class='bx bxs-check-circle'></i>
+          <span>Password Approved!</span>
+       </div>
+
+      <div class="input">
+
+          <i class='bx bxs-user'></i>
+          <input type="text" name="create" id="create" placeholder="Nome">
+      </div>
+      <div class="input">
+          <i class='bx bx-envelope'></i>
+          <input type="E-mail" name="E-mail" id="E-mail" placeholder="E-mail">
+
+      </div>
+      <div class="input">
+          <i class='bx bxs-lock-alt' ></i>
+          <input type="password" name="password" id="password" placeholder="password" [(ngModel)]="pwd1">
+          <i class='bx bxs-low-vision' ></i>
+      </div>
+      <div class="input">
+          <i class='bx bxs-lock-alt' ></i>
+          <input type="password" name="confirm password" id="confirm password" placeholder="confirm password" [(ngModel)]="pwd2">
+          <i class='bx bxs-low-vision' ></i>
+      </div>
+      <button class="button"(click)="create()">Ready</button>
+  </div>
+  </div>
+

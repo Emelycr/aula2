@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="header">
+    <label for="lblHero">Digite o nome do Herói</label>
+    <input type="text" name="txtHero" id="" />
+    <button>Add Hero</button>
+  </div>
+
+  <div class="heroes">
+    <ul>
+      <li *ngFor="let hero of heroes">{{ hero }}</li>
+
+      <!-- <mat-grid-tile *ngFor="let i of vetorAna" (click)="trocar_valor ($event, Math.round(Math.random()));">{{ i }}</mat-grid-tile> -->
+    </ul>
+  </div>
+
+  <div class="card-hero">
+    <div class="titulo">
+      <img src="/assets/logo_ifms.png" class="photo" />
+      <h2>{{ hero.nome }}</h2>
+    </div>
+    <div class="content">Lorem ipsum dolor sit amet.</div>
+  </div>
+</div>
