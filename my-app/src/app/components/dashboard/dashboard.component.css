@@ -106,12 +106,15 @@ h5 {
   gap: 20px;
 }
 
-.content .ad .img {
-  background: #fbe5ca;
+.container .content .ad img{
+  width: 100%;
+  height: 100%;
 }
 
-.content .ad .graph {
-  background: #f0edfe;
+.container .content .ad .graph img{
+  width: 90%;
+  height: 100%;
+  
 }
 
 section {
@@ -352,3 +355,4 @@ section .box2 {
   border-radius: 50%;
   background: #40c17d;
 }
+
