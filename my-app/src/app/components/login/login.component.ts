@@ -19,7 +19,7 @@ export class LoginComponent {
   pwd = ""
 
   login(){
-    if(this.user == "beto@beto" && this.pwd == "beto"){
+    if(this.user == "emely@" && this.pwd == "123"){
       this.isSuccess = true
       this.isError = false
       console.log("Login aprovado")
