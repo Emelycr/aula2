@@ -17,9 +17,10 @@ export class CreateUserComponent {
     this.isIncorrect = false;
     this.isCorrect = true;
     console.log ("Senha Aprovada")
-   } else { 
+   } else {
     this.isIncorrect = true;
     this.isCorrect = false
   }
   }
+
 }
